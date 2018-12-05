@@ -1,0 +1,55 @@
+/*
+-----------------------------------------
+Colors
+-----------------------------------------
+*/
+
+$white:                         #fff !default;
+$black:                         #212121 !default;
+
+$endeavour:                     #013d9c;
+$Aqua:                          #00FFF0;
+$nepal:                         #97A4BE;
+$CloudBurst:                    #233148;
+$Whisper:                       #F5F6FA;
+
+
+//f5f6fa //bg
+
+
+//MAIN COLORS
+$color-primary:                 $endeavour;
+$color-seconday:                $Aqua;
+$color-alpha:                   lighten(desaturate(adjust-hue($color-primary, -16), 1.90), 6.27);
+
+//Backgrounds
+$bg-gradient:                   linear-gradient(to right, rgba(1,61,156,1) 0%,rgba(3,123,186,1) 100%);
+$bg-primary-color:              $Whisper;
+
+
+
+
+// FONT
+$primary-font-color:            $nepal;
+$secondary-font-color:          $CloudBurst;
+$default-font-size:             1.6rem;
+
+
+
+
+
+/*
+-----------------------------------------
+Fonts
+-----------------------------------------
+*/
+
+$default-font: 					'arial';
+
+// Dosis
+$primary-font-light: 			'dosis-light';
+$primary-font-regular: 			'dosis-regular';
+$primary-font-medium: 			'dosis-medium';
+$primary-font-semibold: 		'dosis-semibold';
+$primary-font-bold: 			'dosis-bold';
+

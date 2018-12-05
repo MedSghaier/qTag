@@ -1,0 +1,26 @@
+.heading{
+    font-family: $primary-font-medium;
+    line-height: 4rem;
+    
+    &--primary{
+        font-size: 4rem;
+        color:  $white;
+        margin-bottom: 3rem;
+    }
+
+    &--secondary{
+        font-size: 3rem;
+        color: $secondary-font-color;
+        margin-bottom: 4rem;
+
+    }
+
+    &--center{
+        text-align: center;
+    }
+
+    &--right{
+        text-align: right;
+    }
+
+}

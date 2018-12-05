@@ -1,0 +1,15 @@
+.features{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: $white;
+    padding: 15rem 20rem 0 20rem;
+    margin-bottom: 10rem;
+
+
+    &__cards-container{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}

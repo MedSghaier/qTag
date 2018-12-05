@@ -1,0 +1,20 @@
+.reviews{
+    width: 100vw;
+    min-height: 70vh;
+    background: $bg-gradient;
+    padding: 5rem 20rem;
+
+    &__header{
+        position: relative;
+        &::after{
+            content: "";
+            background-color: #00fff0;
+            height: 4px;
+            width: 10%;
+            z-index: 33;
+            position: absolute;
+            top: 120%;
+            left: calc(50% - 5rem);
+        }
+    }
+}

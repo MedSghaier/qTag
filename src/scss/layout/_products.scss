@@ -1,0 +1,28 @@
+.products{
+    width: 100vw;
+    // height: 110vh;
+    background-color: $bg-primary-color;
+
+    &__upper{
+        padding: 2rem 0 2rem 10rem;
+
+        &-text{
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            padding-right: 5rem;
+            text-align: left;
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__down{
+        padding: 5rem 12rem;
+        text-align: right;
+
+        &-text{
+            font-size: 1.4rem;
+            line-height: 2.5rem;
+            margin-bottom: 3rem;
+        }
+    }
+}

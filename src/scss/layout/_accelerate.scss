@@ -1,0 +1,28 @@
+.accelerate{
+        width: 100vw;
+        min-height: 60vh;
+        background-color: $bg-primary-color;
+        padding: 0 10rem;
+
+        &__left{
+                padding: 5rem 0 0 10rem;
+                
+                &-list{
+                        float: right;
+                        font-size: 1.6rem;
+                        color: $black;
+                        margin-bottom: 5rem;
+
+                        i.ico-tick{
+                                color: $color-seconday;
+                        }
+                }
+
+                &-text {
+                        clear: both;
+                        font-size: 1.4rem;
+                        color: $primary-font-color;
+                }
+        }
+    
+}

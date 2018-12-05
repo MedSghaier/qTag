@@ -1,0 +1,55 @@
+/*
+-----------------------------------------
+Path
+-----------------------------------------
+*/
+
+$fonts_path: '../fonts';
+
+/*
+-----------------------------------------
+DOSIS
+-----------------------------------------
+*/
+
+@font-face {
+    font-family: 'dosis-light';
+    src: url('#{$fonts_path}/dosis/dosis-light.woff2') format('woff2'),
+         url('#{$fonts_path}/dosis/dosis-light.woff') format('woff'),
+         url('#{$fonts_path}/dosis/dosis-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dosis-regular';
+    src: url('#{$fonts_path}/dosis/dosis-regular.woff2') format('woff2'),
+         url('#{$fonts_path}/dosis/dosis-regular.woff') format('woff'),
+         url('#{$fonts_path}/dosis/dosis-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dosis-medium';
+    src: url('#{$fonts_path}/dosis/dosis-medium.woff2') format('woff2'),
+         url('#{$fonts_path}/dosis/dosis-medium.woff') format('woff'),
+         url('#{$fonts_path}/dosis/dosis-medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dosis-semibold';
+    src: url('#{$fonts_path}/dosis/dosis-semibold.woff2') format('woff2'),
+         url('#{$fonts_path}/dosis/dosis-semibold.woff') format('woff'),
+         url('#{$fonts_path}/dosis/dosis-semibold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'dosis-bold';
+    src: url('#{$fonts_path}/dosis/dosis-bold.woff2') format('woff2'),
+         url('#{$fonts_path}/dosis/dosis-bold.woff') format('woff'),
+         url('#{$fonts_path}/dosis/dosis-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

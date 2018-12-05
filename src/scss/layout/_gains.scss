@@ -1,0 +1,10 @@
+.gains{
+        width: 100vw;
+        background-color: $white;
+        min-height: 65vh;
+
+        &__container{
+                padding: 5rem 0 0 0;
+                justify-content: center;
+        }
+}

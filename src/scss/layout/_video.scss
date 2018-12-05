@@ -1,0 +1,10 @@
+#video{
+    width: 100vw;
+    height: 85vh;
+    background: $bg-gradient;
+
+    video{
+        height: inherit;
+        width: inherit;
+    }
+}

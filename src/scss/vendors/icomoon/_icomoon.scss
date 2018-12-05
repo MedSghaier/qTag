@@ -1,0 +1,111 @@
+@import "variables";
+
+@font-face {
+    font-family: 'icomoon';
+    src:
+      url('#{$icomoon-font-path}/icomoon/icomoon.woff?cdwv00') format('woff'),
+      url('#{$icomoon-font-path}/icomoon/icomoon.woff2?cdwv00') format('woff2'),
+      url('#{$icomoon-font-path}/icomoon/icomoon.ttf?cdwv00') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="ico-"], [class*=" ico-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@function unicode($str) {
+  @return unquote("\"") + $str + unquote("\"");
+}
+
+/*/////////////////////////////
+/*Others
+*//////////////////////////////
+
+.ico-chevron-left {
+  &:before {
+    content: unicode($ico-chevron-left); 
+  }
+}
+.ico-chevron-right {
+  &:before {
+    content: unicode($ico-chevron-right); 
+  }
+}
+
+.ico-heart {
+  &:before {
+    content: unicode($ico-heart); 
+  }
+}
+
+.ico-pencil {
+  &:before {
+    content: unicode($ico-pencil); 
+  }
+}
+.ico-case {
+  &:before {
+    content: unicode($ico-case); 
+  }
+}
+.ico-tag {
+  &:before {
+    content: unicode($ico-tag); 
+  }
+}
+
+.ico-tick {
+  &:before {
+    content: unicode($ico-tick); 
+  }
+}
+
+.ico-quote {
+  &:before {
+    content: unicode($ico-quote); 
+  }
+}
+
+.ico-star {
+  &:before {
+    content: unicode($ico-star); 
+  }
+}
+
+
+/*/////////////////////////////
+/*SOCIAL MEDIA
+*//////////////////////////////
+
+.ico-facebook {
+  &:before {
+    content: unicode($ico-facebook); 
+  }
+}
+.ico-twitter {
+  &:before {
+    content: unicode($ico-twitter); 
+  }
+}
+.ico-youtube {
+  &:before {
+    content: unicode($ico-youtube); 
+  }
+}
+.ico-google {
+  &:before {
+    content: unicode($ico-google); 
+  }
+}

@@ -1,0 +1,67 @@
+/*
+-----------------------------------------
+Placeholder
+-----------------------------------------
+*/
+
+@mixin placeholder(){
+	&::-webkit-input-placeholder {@content};
+	&::-moz-placeholder {@content};
+	&:-ms-input-placeholder {@content};
+	&:-moz-placeholder {@content};
+}
+
+/*
+-----------------------------------------
+Clear Fix
+-----------------------------------------
+*/
+
+@mixin clearfix {
+    &::after{
+        content:"";
+        display: table;
+        clear: both;
+    }
+}
+
+/*
+-----------------------------------------
+Vertical Center
+-----------------------------------------
+*/
+
+@mixin vertical-center {
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+ }
+
+/*
+-----------------------------------------
+Media Queries
+-----------------------------------------
+*/
+
+// 1em =  16px relative to the browser !!
+@mixin respond($brealpoint){
+    @if $brealpoint == phone {
+        @media only screen and (max-width: 37.5em) {@content};  //600px
+    }
+    @if $brealpoint == tab-port {
+        @media only screen and (max-width: 56.25em) {@content};       //900px
+    }
+
+    @if $brealpoint == popup-bp {
+        @media only screen and (max-width: 68.75em) {@content};       //1100px
+    }
+
+    @if $brealpoint == tab-land {
+        @media only screen and (max-width: 75em) {@content};      //1200px
+    }
+    @if $brealpoint == big-desktop {
+        @media only screen and (min-width: 112.5em) {@content};      //1800px
+    }
+}

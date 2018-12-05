@@ -1,0 +1,13 @@
+.testimonial{
+    width: 100vw;
+    height: 650px;
+    background-image: url('../img/map.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 4rem 20rem;
+    
+    &__card-container{
+        width: 100%;
+        justify-content: space-around;
+    }
+}
