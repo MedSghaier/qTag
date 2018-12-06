@@ -65,3 +65,37 @@ Media Queries
         @media only screen and (min-width: 112.5em) {@content};      //1800px
     }
 }
+
+
+@mixin respond-to($media) {
+    @if $media == mn-lg {
+        @media (min-width: #{$lg-width + 1}) { @content; }
+    }
+    @else if $media == mn-md {
+        @media (min-width: #{$md-width + 1}) { @content; }
+    }
+    @else if $media == mn-sm {
+        @media (min-width: #{$sm-width + 1}) { @content; }
+    }
+    @else if $media == mn-ms {
+        @media (min-width: #{$ms-width + 1}) { @content; }
+    }
+    @else if $media == mn-xs {
+        @media (min-width: #{$xs-width + 1}) { @content; }
+    }
+    @else if $media == mx-lg {
+        @media (max-width: #{$lg-width}) { @content; }
+    }
+    @else if $media == mx-md {
+        @media (max-width: #{$md-width}) { @content; }
+    }
+    @else if $media == mx-sm {
+        @media (max-width: #{$sm-width}) { @content; }
+    }
+    @else if $media == mx-ms {
+        @media (max-width: #{$ms-width}) { @content; }
+    }
+    @else if $media == mx-xs {
+        @media (max-width: #{$xs-width}) { @content; }
+    }
+}

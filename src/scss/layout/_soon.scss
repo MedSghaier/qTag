@@ -1,5 +1,38 @@
-#soon{
+.soon{
     width: 100vw;
     height: 90vh;
     background-color: $bg-primary-color;
+    padding: 10rem 20rem;
+
+    .img__container{
+        width: inherit;
+        display: flex;
+        justify-content: center;
+        
+        img{
+            align-self: center;
+        }
+    }
+
+    .availability{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 80%;
+
+        &__text{
+            font-size:$default-font-size ;
+            color:$primary-font-color ;
+        }
+    }
+
+    &__cta{
+        width: 100%;
+        display: inline-flex;
+
+
+        a{
+            margin: 1rem auto;
+        }
+    }
 }

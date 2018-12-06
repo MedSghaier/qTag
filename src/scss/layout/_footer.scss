@@ -1,0 +1,42 @@
+.footer{
+    margin-top: 5rem;
+    height: 15vh;
+    background-color: $color-primary;
+    color: $white;
+    font-size: $default-font-size;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    
+    &__rights{
+        display: inline;
+    }
+
+    &__number{
+        display: inline;
+    }
+    &__email{
+        display: inline;
+    }
+
+    &__address{
+        display: inline-flex;
+        flex-direction: column;
+    }
+
+    &__icons{
+        display: inline-flex;
+        width: 15%;
+        justify-content: space-around;
+
+        a{
+            color: $white !important;
+
+            &:hover i{
+                color: $color-seconday;
+            }
+        }
+    }
+}

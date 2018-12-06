@@ -11,6 +11,7 @@
         //for the <button> element
         border: none;
         cursor: pointer;
+        transition: all ease-in .2s;
     }
 
     &--default{
@@ -38,10 +39,8 @@
     &--transparent{
         background-color: transparent;
         color: $white;
-
-        &::after{
-            background-color: $white;
-        }
+        border-radius: 5px;
+        border: 1px solid $color-seconday !important;
     }
 
     

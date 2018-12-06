@@ -17,4 +17,34 @@
             left: calc(50% - 5rem);
         }
     }
+
+    .rating-widget{
+        .rating-stars ul {
+            list-style-type:none;
+            padding:0;
+            margin-top: -35px !important;
+            -moz-user-select:none;
+            -webkit-user-select:none;
+          }
+          .rating-stars ul > li.star {
+            display:inline-block;
+            
+          }
+          
+          /* Idle State of the stars */
+          .rating-stars ul > li.star > i.ico-star {
+            font-size:2.5em; /* Change the size of the stars */
+            color:#ccc; /* Color on idle state */
+          }
+          
+          /* Hover state of the stars */
+          .rating-stars ul > li.star.hover > i.ico-star {
+            color:$white;
+          }
+          
+          /* Selected state of the stars */
+          .rating-stars ul > li.star.selected > i.ico-star {
+            color: $color-seconday;
+          }
+    }
 }
