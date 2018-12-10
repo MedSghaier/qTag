@@ -12,6 +12,69 @@
 
   </head>
   <body>
+        <nav class="nav" id="nav">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="nav__logo">
+                <a href="index.html">
+                  <img src="assets/img/qtag.svg" alt="LOGO" width="25%">
+                </a>
+              </div>
+              <div class="nav__buttons justify-content-around align-items-center d-none d-lg-flex">
+                  <ul class="nav__list mr-5">
+                    <li class="nav__list-item">
+                      <a href="#nav" class="nav__list-link">Home</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#features" class="nav__list-link">Features</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#" class="nav__list-link">Pricing</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#products" class="nav__list-link">Products</a>
+                    </li>
+                  </ul>
+                  <div class="nav__cta">
+                    <a href="#" class="btn btn--transparent">Registration</a>
+                    <a href="#" class="btn btn--default">Connect Now</a>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <div class="navigation d-md-block d-lg-none">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+            <label for="navi-toggle" class="navigation__button ">
+                <span class="navigation__icon">&nbsp;</span>
+            </label>
+            
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Home</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link"> Features</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Pricing</a>
+                    </li>
+
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Contact </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">Get App</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
  
         <div class="m-jumbotron">
             <div class="row">
@@ -24,7 +87,7 @@
                   <a href="#features" class="btn btn--default">Try Now</a>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6">
+              <div class="d-none d-md-flex col-lg-6 col-md-6 align-items-center ">
                 <div class="m-jumbotron__image">
                   <img src="./assets/img/pc.png" alt="">
                 </div>
@@ -34,7 +97,7 @@
       <main>
         <section id="features" class="features">
           <div class="features--header">
-            <h1 class="heading heading--secondary heading--center">Slogan Here about Q-Tag</h1>
+            <h1 class="heading heading--secondary heading--center">Slogan Here about <br> Q-Tag</h1>
           </div>
           <div class="features__cards-container">
             <div class="feature--card">
@@ -142,10 +205,11 @@
         </section>
         <section id="gains" class="gains">
           <div class="gains__container d-flex">
-              <div class="col-md-4">
+              <div class="col-md-4 d-none d-md-block">
                 <img src="assets/img/phone.png" width="75%">
               </div>
-              <div class="col-md-4">
+              <div class="col-md-4 d-flex flex-column
+              align-items-center">
                   <div class="gains--card">
                     <div class="gains--card__header d-flex align-items-end">
                         <div class="gains--card__header-icon">
@@ -218,7 +282,8 @@
                   </p>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 d-none d-md-flex align-items-end">
+                
               <div class="accelerate__right">
                 <img src="assets/img/set.png" alt="Charts" width="90%">
               </div>
@@ -235,8 +300,7 @@
             <div class="testimonial__header">
                 <h1 class="heading heading--secondary heading--center">Join Thousands of satisfied users</h1>
             </div>
-            <div class="row testimonial__card-container">
-              <div class="col-md-3">
+            <div class="testimonial__card-container">
                   <div class="testimonial--card">
                       <div class="testimonial--card__image">
                           <img src="assets/img/p1.jpg" alt="Person">
@@ -249,8 +313,6 @@
                           <p class="testimonial--card__person-position">CEO</p>
                       </div>
                     </div>
-              </div>
-              <div class="col-md-3">
                   <div class="testimonial--card">
                       <div class="testimonial--card__image">
                           <img src="assets/img/p2.jpg" alt="Person">
@@ -263,8 +325,6 @@
                           <p class="testimonial--card__person-position">CEO</p>
                       </div>
                     </div>
-              </div>
-              <div class="col-md-3">
                   <div class="testimonial--card">
                       <div class="testimonial--card__image">
                         <img src="assets/img/p3.jpg" alt="Person">
@@ -277,7 +337,6 @@
                         <p class="testimonial--card__person-position">CEO</p>
                       </div>
                     </div>
-              </div>
             </div>
         </section>
         <section id="reviews" class="reviews">
@@ -338,14 +397,14 @@
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label>Your review here</label>
-                      </div>
+                    </div>
                       <button class="btn btn--default" type="submit">Send Reviews</button>
                 </div>
               </form>            
         </section>
         <section id="soon" class="soon">
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 d-none d-md-block">
               <div class="img__container">
                 <img src="assets/img/phones.png" alt="Phones" width="70%">
               </div>
@@ -373,7 +432,43 @@
             </div>
           </div>
         </section>
-        <section id="contact"></section>
+        <section id="contact" class="contact">
+          <div class="contact__form">
+            <p class="contact__form-title">Get in touch</p>
+            <p class="contact__form-subtile">Call or Email us regarding questions or issues</p>
+            <form>
+                <div class="group">      
+                    <input type="text" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Name</label>
+                </div>
+                <div class="group">      
+                    <input type="number" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Phone N°</label>
+                </div>
+                <div class="group">      
+                    <input type="email" required>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Email</label>
+                </div>
+                <div class="group">      
+                    <textarea></textarea>
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label>Message</label>
+                </div>
+
+                <button class="btn btn--default" type="submit">Send Message</button>
+            </form>
+          </div>
+          <div class="contact__img d-none d-md-block">
+            <img src="assets/img/set.png" width="100%">
+          </div>
+        </section>
       </main>
 
       <footer class="footer"> 

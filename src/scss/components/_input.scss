@@ -2,7 +2,9 @@
   position:relative; 
   margin-bottom:45px; 
 
-    input{
+
+
+    input, textarea{
         font-size:18px;
         padding:10px 10px 10px 5px;
         display:block;
@@ -10,6 +12,7 @@
         border:none;
         border-bottom:1px solid rgba($color: $white, $alpha: 0.1);
         background-color: transparent;
+        color: $white;
 
         &:focus{
             outline:none; 
@@ -81,7 +84,7 @@
     /* HIGHLIGHTER ================================== */
     .highlight {
         position:absolute;
-        height:60%; 
+        // height:60%; 
         width:100px; 
         top:25%; 
         left:0;

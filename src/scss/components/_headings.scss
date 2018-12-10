@@ -6,12 +6,24 @@
         font-size: 4rem;
         color:  $white;
         margin-bottom: 3rem;
+
+        @include respond-to(mx-sm){
+            font-size: 3rem;
+            margin-bottom: 1rem;  
+        }
     }
 
     &--secondary{
         font-size: 3rem;
         color: $secondary-font-color;
         margin-bottom: 4rem;
+
+        @include respond-to(mx-md){
+            margin-bottom: 2rem;
+        }
+        @include respond-to(mx-ms){
+            font-size: 2.5rem;
+        }
 
     }
 

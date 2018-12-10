@@ -6,5 +6,9 @@
         &__container{
                 padding: 5rem 0 0 0;
                 justify-content: center;
+
+                @include respond-to(mx-ms){
+                        align-items: center;
+                }
         }
 }

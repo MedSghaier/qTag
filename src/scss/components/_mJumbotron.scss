@@ -1,14 +1,27 @@
 .m-jumbotron{
     width: 100vw;
-    min-height: 90vh;
+    min-height: 100vh;
     background: $bg-gradient;
-    padding: 10rem 15rem;
+    padding: 20rem 15rem 10rem 15rem;   
+
+    @include respond-to(mx-sm){
+        padding: 13rem 13rem 10rem 13rem;   
+
+    }
+    
+    @include respond-to(mx-xs){
+        padding: 25rem 5rem 0;
+    }
     
     &__cta{
         width: 100%;
         margin-top: 3rem;
         display: flex;
         justify-content: center;
+
+        @include respond-to(mx-sm){
+            justify-content: flex-start;    
+        }
     }
     &__text{
         color: $primary-font-color;
@@ -20,7 +33,7 @@
 
     &__image{        
         img{
-            width: 80%;
+            width: 100%;
         }
     }
 }

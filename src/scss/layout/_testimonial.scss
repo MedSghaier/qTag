@@ -1,13 +1,25 @@
 .testimonial{
     width: 100vw;
-    height: 650px;
+    // height: 650px;
     background-image: url('../img/map.png');
     background-position: center;
     background-repeat: no-repeat;
-    padding: 4rem 20rem;
+    padding: 4rem 2rem;
+
+    @include respond-to(mx-sm){
+        padding: 4rem 0;
+
+    }
     
     &__card-container{
         width: 100%;
+        display: flex;
         justify-content: space-around;
+
+        @include respond-to(mx-ms){
+            flex-direction: column !important;
+            align-items: center !important;    
+        }
+        
     }
 }

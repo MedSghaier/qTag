@@ -4,13 +4,21 @@
     background: $bg-gradient;
     padding: 5rem 20rem;
 
+    @include respond-to(mx-sm){
+      padding: 5rem;
+    }
+
+    @include respond-to(mx-xs){
+      padding: 2rem 1rem;
+    }
+
     &__header{
         position: relative;
         &::after{
             content: "";
             background-color: #00fff0;
             height: 4px;
-            width: 10%;
+            width: 100px;
             z-index: 33;
             position: absolute;
             top: 120%;

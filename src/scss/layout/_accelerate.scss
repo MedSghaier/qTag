@@ -1,8 +1,13 @@
 .accelerate{
         width: 100vw;
-        min-height: 60vh;
+        min-height: 53vh;
         background-color: $bg-primary-color;
         padding: 0 10rem;
+
+        @include respond-to(mx-ms){
+                padding: 0 1rem;
+
+        }
 
         &__left{
                 padding: 5rem 0 0 10rem;
@@ -23,6 +28,12 @@
                         font-size: 1.4rem;
                         color: $primary-font-color;
                 }
+
+                
+                @include respond-to(mx-xs){
+                        padding: 0 1rem;
+
+                }
         }
-    
+        
 }

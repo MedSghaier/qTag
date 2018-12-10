@@ -12,6 +12,10 @@
         border: none;
         cursor: pointer;
         transition: all ease-in .2s;
+
+        @include respond-to(mx-xs){
+            font-size: 1.4rem;
+        }
     }
 
     &--default{

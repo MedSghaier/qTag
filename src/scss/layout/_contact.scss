@@ -1,2 +1,37 @@
-#contact{
+.contact{
+    min-height: 100vh; 
+    position: relative;
+    margin-bottom: 10rem;
+    
+    &__form{
+
+        background: $bg-gradient;
+        display: inline-block;
+        padding: 3rem 5rem;
+        width: 30%;
+        margin-left: 30%;
+
+        @include respond-to(mx-ms){
+            width: 100vw;
+            margin-left: 0;
+        }
+
+        &-title{
+            color: $white;
+            font-size: 3rem;
+        }
+
+        &-subtile{
+            color: $primary-font-color;
+            font-size: 1.4rem;
+        }
+
+    }
+
+    &__img{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        z-index: -1;
+    }
 }
