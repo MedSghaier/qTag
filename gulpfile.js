@@ -43,7 +43,10 @@ gulp.task('css', function () {
 });
 
 gulp.task('js',function(){
-  gulp.src(['src/js/vendor/plyr.js', 'src/js/vendor/jquery.min.js', 'node_modules/bootstrap/dist/js/bootstrap.min.js','src/js/theme.js' ])
+    gulp.src(['src/js/vendor/jquery.min.js', 
+'node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+'node_modules/bootstrap/dist/js/',  'src/js/vendor/plyr.js',
+  'src/js/theme.js' ])
     .pipe(sourcemaps.init())
     .pipe(concat('bundle.js'))
     .pipe(gulp.dest('app/assets/js'))

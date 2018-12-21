@@ -1,3 +1,8 @@
+<?php
+require 'lang/lang.php';
+require 'lang/choselang.php';
+?>
+
 <!doctype html>
 <html>
   <head>
@@ -8,6 +13,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
+    <link href="assets/css/animate.css" rel="stylesheet">
     <link href="assets/css/style.min.css" rel="stylesheet">
 
   </head>
@@ -23,6 +29,7 @@
               <div class="nav__buttons justify-content-around align-items-center d-none d-lg-flex">
                   <ul class="nav__list mr-5">
                     <li class="nav__list-item">
+                      <!-- <a href="#nav" class="nav__list-link"></*?php echo $home;?></a> -->
                       <a href="#nav" class="nav__list-link">Home</a>
                     </li>
                     <li class="nav__list-item">
@@ -35,9 +42,16 @@
                         <a href="#products" class="nav__list-link">Products</a>
                     </li>
                   </ul>
-                  <div class="nav__cta">
+                  <div class="nav__cta d-flex align-items-center">
                     <a href="#" class="btn btn--transparent">Registration</a>
                     <a href="#" class="btn btn--default">Connect Now</a>
+                    <div class="nav__cta-lang"> 
+                      <select class="select" id="lang_header">
+                        <option value="fr"> FR</option>
+                        <option value="en"> EN</option>
+                      </select>
+                    </div>
+
                   </div>
               </div>
             </div>
@@ -346,19 +360,19 @@
               <form class="row">
                 <div class="col-md-6">
                     <div class="group">      
-                        <input type="text" required>
+                        <input type="text" name="company" id="review-company" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label>Name of Company</label>
                     </div>
                     <div class="group">      
-                        <input type="text" required>
+                        <input type="text" name="email" id="review-email" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label>E-mail here</label>
                     </div>
                     <div class="group">      
-                        <input type="number" required>
+                        <input type="number" name="phone" id="review-phone" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
                         <label>Phone number</label>
@@ -366,23 +380,23 @@
                 </div>
                 <div class="col-md-6">
                     <div class="group">      
-                        <input type="number" required disabled>
+                        <input type="number" id="rate" required disabled>
                         <div class="rating-widget">
                             <div class='rating-stars text-center'>
                                 <ul id='stars'>
-                                  <li class='star' title='Poor' data-value='1'>
+                                  <li class='star' data-value='1'>
                                     <i class='ico-star'></i>
                                   </li>
-                                  <li class='star' title='Fair' data-value='2'>
+                                  <li class='star' data-value='2'>
                                     <i class='ico-star'></i>
                                   </li>
-                                  <li class='star' title='Good' data-value='3'>
+                                  <li class='star' data-value='3'>
                                     <i class='ico-star'></i>
                                   </li>
-                                  <li class='star' title='Excellent' data-value='4'>
+                                  <li class='star' data-value='4'>
                                     <i class='ico-star'></i>
                                   </li>
-                                  <li class='star' title='WOW!!!' data-value='5'>
+                                  <li class='star' data-value='5'>
                                     <i class='ico-star'></i>
                                   </li>
                                 </ul>
@@ -398,9 +412,32 @@
                         <span class="bar"></span>
                         <label>Your review here</label>
                     </div>
-                      <button class="btn btn--default" type="submit">Send Reviews</button>
+                      <input class="btn btn--default" id="review-btn" type="submit" name="submitreview" value="Send reviews">
                 </div>
               </form>            
+              <?php
+              if(isset($_POST["submitreview"])){
+                dump("HERE");
+                $to="med.khalil.sghaier@gmail.com";
+                $email=htmlspecialchars($_POST["email"]);
+                $phone=htmlspecialchars ($_POST["phone"]);
+                $company=htmlspecialchars ($_POST["company"]);
+                $review=htmlspecialchars($_POST["review"]);
+                $rate=htmlspecialchars($_POST["number"]);
+                $subject = 'Review from '.$email;
+                $message = 'Rate: '.$rate.'/5'.'\n'.$review.'\n'.'company: '.$company.'\n'.'Phone: '.$phone;
+                $headers = array(
+                    'From' => $email,
+                    'X-Mailer' => 'PHP/' . phpversion()
+                );
+                if(mail($to, $subject, $message, $headers)) {
+                  echo "envoyé avec succé";
+                }
+                else {
+                  echo "echec";
+                }
+              }
+              ?>
         </section>
         <section id="soon" class="soon">
           <div class="row">
@@ -438,32 +475,53 @@
             <p class="contact__form-subtile">Call or Email us regarding questions or issues</p>
             <form>
                 <div class="group">      
-                    <input type="text" required>
+                    <input type="text" name="name" id="contact-name" required>
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>Name</label>
                 </div>
                 <div class="group">      
-                    <input type="number" required>
+                    <input type="number" name="phone" id="contact-phone" required>
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>Phone N°</label>
                 </div>
                 <div class="group">      
-                    <input type="email" required>
+                    <input type="email" name="email" id="contact-email" required>
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>Email</label>
                 </div>
                 <div class="group">      
-                    <textarea></textarea>
+                    <textarea name="message" id="contact-message"></textarea>
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label>Message</label>
                 </div>
 
-                <button class="btn btn--default" type="submit">Send Message</button>
+                <input class="btn btn--default" id="contact-btn" type="submit" value="Send message" name="submitmessage">
             </form>
+            <?php
+            if(isset($_POST["submitmessage"])){
+                $to="me@test.com";
+                $name=htmlspecialchars($_POST["name"]);
+                $email=htmlspecialchars($_POST["email"]);
+                $phone=htmlspecialchars ($_POST["phone"]);
+                $message=htmlspecialchars($_POST["message"]);
+                $subject = 'Message '.$email;
+                $message = 'Name: '.$name.'\n'.'Message'.$message.'\n'.'Phone: '.$phone;
+                $headers = array(
+                    'From' => $email,
+                    'X-Mailer' => 'PHP/' . phpversion()
+                );
+              if(mail($to, $subject, $message, $headers)) {
+                echo "envoyé avec succé";
+              }
+              else {
+                echo "echec";
+              }
+              }
+              ?>
           </div>
           <div class="contact__img d-none d-md-block">
             <img src="assets/img/set.png" width="100%">

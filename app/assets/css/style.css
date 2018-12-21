@@ -135,6 +135,17 @@ ol, ul {
   padding: 0;
   margin: 0; }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background: #2c3e50;
+  background-image: none; }
+
 img {
   user-drag: none;
   -moz-user-drag: none;
@@ -486,6 +497,9 @@ input[type="number"] {
   pointer-events: none;
   opacity: 0.5; }
 
+#rate {
+  color: transparent !important; }
+
 /* ANIMATIONS ================ */
 
 @keyframes inputHighlighter {
@@ -644,6 +658,45 @@ input[type="number"] {
 
 .nav__cta a.btn {
   font-size: 1.2rem !important; }
+
+.nav__cta-lang {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  position: relative;
+  transition: .25s all ease;
+  /* Transition */ }
+
+.nav__cta-lang::after {
+  content: '\25BC';
+  color: #fff;
+  position: absolute;
+  color: #fff;
+  top: 11px;
+  right: -3px;
+  font-size: 10px; }
+
+.nav__cta-lang:hover {
+  cursor: pointer; }
+
+.nav__cta-lang:hover::after {
+  color: #00FFF0; }
+
+.nav__cta-lang::after {
+  transition: .25s all ease; }
+
+.nav__cta-lang select {
+  width: 120%;
+  height: 100%;
+  margin: 0;
+  padding: 0 0 0 .5em;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 3px; }
+
+.nav__cta-lang select::-ms-expand {
+  display: none; }
 
 .navigation__checkbox {
   display: none; }
@@ -882,7 +935,7 @@ input[type="number"] {
 
 .soon {
   width: 100vw;
-  min-height: 90vh;
+  max-height: 90vh;
   background-color: #F5F6FA;
   padding: 10rem 20rem; }
 
