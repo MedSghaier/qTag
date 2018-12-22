@@ -3,6 +3,7 @@
     left: 0;  
     bottom: 0;
     min-height: 15vh;
+    width: 100vw;
     background-color: $color-primary;
     color: $white;
     font-size: $default-font-size;
@@ -40,13 +41,18 @@
     &__icons{
         display: inline-flex;
         width: 15%;
+        padding-right: 2rem; 
         justify-content: space-around;
 
         a{
             color: $white !important;
 
-            &:hover i{
+            &:hover i {
                 color: $color-seconday;
+            }
+
+            &:hover {
+                text-decoration: none;
             }
         }
     }

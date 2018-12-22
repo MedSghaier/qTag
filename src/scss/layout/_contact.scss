@@ -2,14 +2,19 @@
     min-height: 100vh; 
     position: relative;
     margin-bottom: 10rem;
+    padding: 10rem;
+
     
     &__form{
 
         background: $bg-gradient;
         display: inline-block;
         padding: 3rem 5rem;
-        width: 30%;
-        margin-left: 30%;
+        width: 40%;
+        margin-left: 15%;
+        box-shadow: 7px 0px 16px -8px rgba(0,0,0,0.75);
+
+
 
         @include respond-to(mx-ms){
             width: 100vw;
@@ -30,8 +35,8 @@
 
     &__img{
         position: absolute;
-        top: 20%;
-        left: 50%;
+        top: 25%;
+        left: 45%;
         z-index: -1;
     }
 }
