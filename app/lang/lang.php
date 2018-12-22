@@ -18,7 +18,7 @@ if (!in_array($lang, $available)) {
 }
 // $lang = 'en';
 // This will return an array for the chosen lang
-return include_once 'lang/' . $lang . '.php';
+return include_once  $lang . '.php';
 
 function trans($key, $lang) {
 	foreach (explode('.', $key) as $segment) {

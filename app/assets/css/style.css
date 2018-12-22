@@ -420,6 +420,11 @@ input[type="number"] {
 .m-jumbotron__image img {
   width: 100%; }
 
+.f-jumbotron {
+  width: 100%;
+  min-height: 80vh;
+  background: linear-gradient(to right, #013d9c 0%, #037bba 100%); }
+
 .group {
   position: relative;
   margin-bottom: 45px;
@@ -476,7 +481,7 @@ input[type="number"] {
   content: '';
   height: 2px;
   width: 0;
-  bottom: 1px;
+  bottom: 0;
   position: absolute;
   background: #00FFF0;
   transition: 0.2s ease all;
@@ -543,14 +548,16 @@ input[type="number"] {
 .contact {
   min-height: 100vh;
   position: relative;
-  margin-bottom: 10rem; }
+  margin-bottom: 10rem;
+  padding: 10rem; }
 
 .contact__form {
   background: linear-gradient(to right, #013d9c 0%, #037bba 100%);
   display: inline-block;
   padding: 3rem 5rem;
-  width: 30%;
-  margin-left: 30%; }
+  width: 40%;
+  margin-left: 15%;
+  box-shadow: 7px 0px 16px -8px rgba(0, 0, 0, 0.75); }
 
 @media (max-width: 768px) {
   .contact__form {
@@ -567,8 +574,8 @@ input[type="number"] {
 
 .contact__img {
   position: absolute;
-  top: 20%;
-  left: 50%;
+  top: 25%;
+  left: 45%;
   z-index: -1; }
 
 .features {
@@ -656,47 +663,19 @@ input[type="number"] {
   bottom: 0;
   left: 0; }
 
+.nav__cta > *:not(:last-child) {
+  margin-right: 10px !important; }
+
 .nav__cta a.btn {
   font-size: 1.2rem !important; }
 
 .nav__cta-lang {
   display: inline-block;
-  width: 36px;
-  height: 36px;
   position: relative;
-  transition: .25s all ease;
-  /* Transition */ }
-
-.nav__cta-lang::after {
-  content: '\25BC';
-  color: #fff;
-  position: absolute;
-  color: #fff;
-  top: 11px;
-  right: -3px;
-  font-size: 10px; }
-
-.nav__cta-lang:hover {
-  cursor: pointer; }
-
-.nav__cta-lang:hover::after {
-  color: #00FFF0; }
-
-.nav__cta-lang::after {
   transition: .25s all ease; }
 
-.nav__cta-lang select {
-  width: 120%;
-  height: 100%;
-  margin: 0;
-  padding: 0 0 0 .5em;
-  color: #fff;
-  cursor: pointer;
-  font-weight: bold;
-  border-radius: 3px; }
-
-.nav__cta-lang select::-ms-expand {
-  display: none; }
+.nav__cta-lang a {
+  padding: .8rem 1rem !important; }
 
 .navigation__checkbox {
   display: none; }
@@ -990,6 +969,7 @@ input[type="number"] {
   left: 0;
   bottom: 0;
   min-height: 15vh;
+  width: 100vw;
   background-color: #013d9c;
   color: #fff;
   font-size: 1.6rem;
@@ -1030,6 +1010,7 @@ input[type="number"] {
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 15%;
+  padding-right: 2rem;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
@@ -1038,6 +1019,51 @@ input[type="number"] {
 
 .footer__icons a:hover i {
   color: #00FFF0; }
+
+.footer__icons a:hover {
+  text-decoration: none; }
+
+.contact-card {
+  width: 100%;
+  min-height: 580px;
+  position: relative; }
+
+.contact-card__content {
+  position: absolute;
+  top: -200px;
+  left: 15%;
+  z-index: 10;
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  display: -ms-flexbox;
+  display: flex;
+  box-shadow: 0px 0px 27px -4px rgba(0, 0, 0, 0.75);
+  -ms-flex-pack: start;
+      justify-content: start; }
+
+.contact-card__content-img {
+  width: 30%;
+  height: 100%;
+  background: url("../img/Testimonial.png");
+  background-position: center center;
+  background-size: cover; }
+
+.contact-card__content-form {
+  background-color: #fff;
+  width: 70%;
+  height: 100%;
+  padding: 5rem 10rem; }
+
+.contact-card__content-form input, .contact-card__content-form textarea {
+  color: #233148 !important; }
+
+.contact-card__content-form label {
+  color: #212121 !important; }
+
+.contact-card__content-form .bar {
+  background-color: #ccc !important;
+  height: 1px; }
 
 @keyframes plyr-progress {
   to {

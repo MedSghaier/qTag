@@ -59,31 +59,6 @@ jQuery(document).ready( function($) {
           
         });    
 
-     
-      
-
-        /*
-        -----------------------------------------
-        language Change
-        -----------------------------------------
-        */
-
-        $(".select").change(function () {
-            console.log($(this).val())
-
-          $.post("lang/choselang.php", {
-              lang: $(this).val()
-            })
-            .done(function (data) {
-              console.log(data);
-              if (data) {
-                window.location.reload()
-              }
-            });
-        });
-
-
-
         /*
         -----------------------------------------
         Form Animations
@@ -174,10 +149,17 @@ jQuery(document).ready( function($) {
         }
     });
 
-    $('.nav__cta-lang').on('click', function(){
-        // console.log($('#lang_header'));
-        
-        $('#lang_header').open();
+    /*
+    -----------------------------------------
+    CLOSE NAVIGATION OVERLAY IF ITEM IS CLICKED
+    -----------------------------------------
+    */
+
+    $('.navigation__item a').on('click', function() {
+        setTimeout(function() {
+            $('#navi-toggle').prop('checked', false);
+        }, 850)
+
     })
 
     
