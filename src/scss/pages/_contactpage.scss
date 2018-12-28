@@ -22,6 +22,10 @@
             background: url('../img/Testimonial.png');
             background-position: center center;
             background-size: cover;
+
+            @include respond-to(mx-sm){
+                display: none;
+            }
         }
 
         &-form{
@@ -30,6 +34,11 @@
             height: 100%;
             padding: 5rem 10rem ;
 
+
+            @include respond-to(mx-sm){
+                width: 100%;
+                padding:3.5rem;
+            }
             input, textarea{
                 color: $secondary-font-color !important;
             }

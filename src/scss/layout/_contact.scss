@@ -4,6 +4,10 @@
     margin-bottom: 10rem;
     padding: 10rem;
 
+    @include respond-to(mx-ms){
+        padding : 10rem 0;
+    }
+
     
     &__form{
 

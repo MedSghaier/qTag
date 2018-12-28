@@ -436,7 +436,7 @@ input[type="number"] {
   font-size: 18px;
   padding: 10px 10px 10px 5px;
   display: block;
-  width: 300px;
+  width: 90%;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   background-color: transparent;
@@ -475,7 +475,7 @@ input[type="number"] {
 .group .bar {
   position: relative;
   display: block;
-  width: 300px; }
+  width: 90%; }
 
 .group .bar::before, .group .bar::after {
   content: '';
@@ -550,6 +550,10 @@ input[type="number"] {
   position: relative;
   margin-bottom: 10rem;
   padding: 10rem; }
+
+@media (max-width: 768px) {
+  .contact {
+    padding: 10rem 0; } }
 
 .contact__form {
   background: linear-gradient(to right, #013d9c 0%, #037bba 100%);
@@ -1049,11 +1053,20 @@ input[type="number"] {
   background-position: center center;
   background-size: cover; }
 
+@media (max-width: 991px) {
+  .contact-card__content-img {
+    display: none; } }
+
 .contact-card__content-form {
   background-color: #fff;
   width: 70%;
   height: 100%;
   padding: 5rem 10rem; }
+
+@media (max-width: 991px) {
+  .contact-card__content-form {
+    width: 100%;
+    padding: 3.5rem; } }
 
 .contact-card__content-form input, .contact-card__content-form textarea {
   color: #233148 !important; }
