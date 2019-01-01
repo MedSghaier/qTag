@@ -550,10 +550,13 @@ input[type="number"] {
   position: relative;
   margin-bottom: 10rem;
   padding: 10rem; }
+<<<<<<< HEAD
 
 @media (max-width: 768px) {
   .contact {
     padding: 10rem 0; } }
+=======
+>>>>>>> 2a10024b3b729151cbb41ae86b23bcff1d7b16b9
 
 .contact__form {
   background: linear-gradient(to right, #013d9c 0%, #037bba 100%);
@@ -1053,21 +1056,27 @@ input[type="number"] {
   background-position: center center;
   background-size: cover; }
 
+<<<<<<< HEAD
 @media (max-width: 991px) {
   .contact-card__content-img {
     display: none; } }
 
+=======
+>>>>>>> 2a10024b3b729151cbb41ae86b23bcff1d7b16b9
 .contact-card__content-form {
   background-color: #fff;
   width: 70%;
   height: 100%;
   padding: 5rem 10rem; }
 
+<<<<<<< HEAD
 @media (max-width: 991px) {
   .contact-card__content-form {
     width: 100%;
     padding: 3.5rem; } }
 
+=======
+>>>>>>> 2a10024b3b729151cbb41ae86b23bcff1d7b16b9
 .contact-card__content-form input, .contact-card__content-form textarea {
   color: #233148 !important; }
 
