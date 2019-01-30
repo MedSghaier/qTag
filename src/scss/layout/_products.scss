@@ -24,5 +24,19 @@
             line-height: 2.5rem;
             margin-bottom: 3rem;
         }
+
+        @include respond-to(mx-xs){
+            padding: 5rem ;
+            text-align: left;
+        }
+    }
+
+    &-left-container{
+        margin-top: 12rem;
+        
+        @include respond-to(mx-ms){
+            margin: 2rem auto;
+            font-size: 2.5rem;
+        }
     }
 }

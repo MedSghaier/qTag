@@ -159,6 +159,9 @@ img {
   -ms-user-select: none;
   image-rendering: -webkit-optimize-contrast; }
 
+a, a:hover, a:active, a:visited {
+  text-decoration: none; }
+
 /* Hide HTML5 Up and Down arrows. */
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -184,7 +187,7 @@ input[type="number"] {
 .heading--secondary {
   font-size: 3rem;
   color: #233148;
-  margin-bottom: 4rem; }
+  margin-bottom: 2rem; }
 
 @media (max-width: 1199px) {
   .heading--secondary {
@@ -268,8 +271,8 @@ input[type="number"] {
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
-  -ms-flex-pack: justify;
-      justify-content: space-between;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   padding: 3rem; }
 
 .feature--card__icon {
@@ -278,7 +281,8 @@ input[type="number"] {
 .feature--card__title {
   font-size: 1.7rem;
   color: #233148;
-  margin-top: 1.5rem; }
+  margin-top: 1.5rem;
+  margin-top: 5rem; }
 
 .feature--card__text {
   color: #97A4BE;
@@ -414,7 +418,7 @@ input[type="number"] {
 .m-jumbotron__text {
   color: #97A4BE;
   font-family: "dosis-medium";
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-bottom: 1.4rem; }
 
 .m-jumbotron__image img {
@@ -549,27 +553,23 @@ input[type="number"] {
   min-height: 100vh;
   position: relative;
   margin-bottom: 10rem;
-  padding: 10rem; }
-<<<<<<< HEAD
+  padding: 5rem; }
 
 @media (max-width: 768px) {
   .contact {
     padding: 10rem 0; } }
-=======
->>>>>>> 2a10024b3b729151cbb41ae86b23bcff1d7b16b9
 
 .contact__form {
   background: linear-gradient(to right, #013d9c 0%, #037bba 100%);
-  display: inline-block;
+  display: block;
   padding: 3rem 5rem;
-  width: 40%;
-  margin-left: 15%;
-  box-shadow: 7px 0px 16px -8px rgba(0, 0, 0, 0.75); }
+  width: 45%;
+  box-shadow: 0px 0px 15px -2px rgba(0, 0, 0, 0.75);
+  margin: 5rem auto 0; }
 
 @media (max-width: 768px) {
   .contact__form {
-    width: 100vw;
-    margin-left: 0; } }
+    width: 90vw; } }
 
 .contact__form-title {
   color: #fff;
@@ -589,7 +589,7 @@ input[type="number"] {
   width: 100vw;
   min-height: 100vh;
   background-color: #fff;
-  padding: 15rem 20rem 0 20rem;
+  padding: 10rem 20rem 0;
   margin-bottom: 10rem; }
 
 @media (max-width: 1199px) {
@@ -637,7 +637,7 @@ input[type="number"] {
   font-size: 1.4rem !important;
   border-bottom: 2px solid #395e7f;
   padding: 1rem 0;
-  z-index: 99; }
+  z-index: 999999; }
 
 .nav__logo {
   display: inline; }
@@ -865,6 +865,19 @@ input[type="number"] {
   line-height: 2.5rem;
   margin-bottom: 3rem; }
 
+@media (max-width: 479px) {
+  .products__down {
+    padding: 5rem;
+    text-align: left; } }
+
+.products-left-container {
+  margin-top: 12rem; }
+
+@media (max-width: 768px) {
+  .products-left-container {
+    margin: 2rem auto;
+    font-size: 2.5rem; } }
+
 .reviews {
   width: 100vw;
   min-height: 70vh;
@@ -1056,27 +1069,21 @@ input[type="number"] {
   background-position: center center;
   background-size: cover; }
 
-<<<<<<< HEAD
 @media (max-width: 991px) {
   .contact-card__content-img {
     display: none; } }
 
-=======
->>>>>>> 2a10024b3b729151cbb41ae86b23bcff1d7b16b9
 .contact-card__content-form {
   background-color: #fff;
   width: 70%;
   height: 100%;
   padding: 5rem 10rem; }
 
-<<<<<<< HEAD
 @media (max-width: 991px) {
   .contact-card__content-form {
     width: 100%;
     padding: 3.5rem; } }
 
-=======
->>>>>>> 2a10024b3b729151cbb41ae86b23bcff1d7b16b9
 .contact-card__content-form input, .contact-card__content-form textarea {
   color: #233148 !important; }
 

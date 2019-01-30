@@ -37,7 +37,7 @@
                         </form>
                         <?php
                           if(isset($_POST["submitmessage"])){
-                              $to="me@test.com";
+                              $to="info@qtag.ca";
                               $name=htmlspecialchars($_POST["name"]);
                               $email=htmlspecialchars($_POST["email"]);
                               $phone=htmlspecialchars ($_POST["phone"]);

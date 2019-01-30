@@ -1,11 +1,11 @@
 <main>
     <div class="m-jumbotron">
         <div class="row">
-            <div class="col-lg-6 col-md-6 px-5">
+            <div class="col-lg-6 col-md-6 px-5" >
                 <h1 class="heading heading--primary"><?php echo $jumpTitle ?></h1>
                 <p class="m-jumbotron__text"><?php echo $jumpText1 ?></p>
                 <p class="m-jumbotron__text"><?php echo $jumpText2 ?></p>
-                <p class="m-jumbotron__text"><?php echo $jumpTest3 ?></p>
+                <!-- <p class="m-jumbotron__text"><?php echo $jumpTest3 ?></p> -->
                 <div class="m-jumbotron__cta">
                     <a href="#features" class="btn btn--default"><?php echo $jumpCTA ?></a>
                 </div>
@@ -20,7 +20,9 @@
     <main>
         <section id="features" class="features">
             <div class="features--header">
-                <h1 class="heading heading--secondary heading--center">Slogan Here about <br> Q-Tag</h1>
+                <h1 class="heading heading--secondary heading--center">
+                    <?php echo $featuresTitle ?>
+                </h1>
             </div>
             <div class="features__cards-container">
                 <div class="feature--card">
@@ -28,32 +30,34 @@
                         <img src="assets/img//brush.svg" alt="" width="80%">
                     </div>
                     <p class="feature--card__title"><?php echo $card1Title ?></p>
-                    <p class="feature--card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum alias
-                        illum dignissimos amet a dolore!</p>
+                    <!-- <p class="feature--card__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum alias
+                        illum dignissimos amet a dolore!
+                    </p> -->
                 </div>
                 <div class="feature--card">
                     <div class="feature--card__icon">
                         <img src="assets/img/cart.svg" alt="" width="80%">
                     </div>
                     <p class="feature--card__title"><?php echo $card2Title ?></p>
-                    <p class="feature--card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum alias
-                        illum dignissimos amet a dolore!</p>
+                    <!-- <p class="feature--card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum alias
+                        illum dignissimos amet a dolore!</p> -->
                 </div>
                 <div class="feature--card">
                     <div class="feature--card__icon">
                         <img src="assets/img/message.svg" alt="" width="80%">
                     </div>
                     <p class="feature--card__title"><?php echo $card3Title ?></p>
-                    <p class="feature--card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum alias
-                        illum dignissimos amet a dolore!</p>
+                    <!-- <p class="feature--card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum alias
+                        illum dignissimos amet a dolore!</p> -->
                 </div>
                 <div class="feature--card">
                     <div class="feature--card__icon">
                         <img src="assets/img/phone.svg" alt="" width="80%">
                     </div>
                     <p class="feature--card__title"><?php echo $card4Title ?></p>
-                    <p class="feature--card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum alias
-                        illum dignissimos amet a dolore!</p>
+                    <!-- <p class="feature--card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum alias
+                        illum dignissimos amet a dolore!</p> -->
                 </div>
 
             </div>
@@ -88,11 +92,7 @@
                     <div class="products__upper">
                         <h1 class="heading heading--secondary"><?php echo $ourProducts ?></h1>
                         <p class="products__upper-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ratione fuga deserunt
-                            iste architecto earum explicabo ipsum rerum molestias numquam? Doloremque temporibus maxime
-                            libero illum? Enim debitis, ducimus praesentium corrupti quis saepe perferendis reiciendis
-                            ab fuga suscipit dolores, ullam fugit eveniet eum, animi mollitia sit neque architecto?
-                            Deserunt, placeat tempore?
+                            <?php echo $productUpper ?>
                         </p>
                         <a href="#" class="btn btn--default"><?php echo $moreInfo ?></a>
                     </div>
@@ -103,16 +103,13 @@
                     <div class="products__down">
                         <h1 class="heading heading--secondary"><?php echo $ourProducts ?></h1>
                         <p class="products__down-text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium ratione fuga deserunt
-                            iste architecto earum explicabo ipsum rerum molestias numquam? Doloremque temporibus maxime
-                            libero illum? Enim debitis, ducimus praesentium corrupti quis saepe perferendis reiciendis
-                            ab fuga suscipit dolores.
+                            <?php echo $productsDown ?>
                         </p>
                         <a href="#" class="btn btn--default"><?php echo $moreInfo ?></a>
                     </div>
                 </div>
                 <div class="col-lg-1 col-md-1"></div>
-                <div class="col-lg-5 col-md-5">
+                <div class="col-lg-5 col-md-5 products-left-container d-block">
                     <div id="productCarrousel2" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
@@ -426,7 +423,7 @@
                 </form>
                 <?php
             if(isset($_POST["submitmessage"])){
-                $to="me@test.com";
+                $to="info@qtag.ca";
                 $name=htmlspecialchars($_POST["name"]);
                 $email=htmlspecialchars($_POST["email"]);
                 $phone=htmlspecialchars ($_POST["phone"]);
@@ -446,9 +443,9 @@
               }
               ?>
             </div>
-            <div class="contact__img d-none d-md-block">
+            <!-- <div class="contact__img d-none d-md-block">
                 <img src="assets/img/map-form.png" width="100%">
-            </div>
+            </div> -->
         </section>
 
     </main>

@@ -14,20 +14,23 @@
         $jumpTitle ="Increase your profits and you efficiency";
         $jumpText1="Q-Tag platform offers dealers a way.";
         $jumpText2="Fast and effective for inventory tracking that allows access, among other things, information.";
-        $jumpTest3="Regarding the status of vehicles, the state of preparations for their physical marketing.";
         $jumpCTA="Try Now";
+        
         //Features
-        $card1Title="Modern Flat Design";
-        $card2Title="First 7 Days Free";
-        $card3Title="Full Support";
-        $card4Title="User Friendly";
+        $featuresTitle = "Got questions? <a href='#contact'> Click here to contact us! </a>  ";
+        $card1Title="Simple et personnalisable";
+        $card2Title="Assistance <br/> Lundi au vendredi <br/> 9:00 - 17:00";
+        $card3Title="\"User Friendly\"";
+        $card4Title="Deux premiers moisd'utilisation du SAAS gratuit";
         
         //Products
         $ourProducts="Our Products";
         $moreInfo="More Informations";
+        $upperText ="";
+        $downText ="";
 
         // Accelerate
-        $accTitle=">Accelerate your management by
+        $accTitle="Accelerate your management by
         minimizing the use of papers";
         $accEasy="Easy to use";
         $accBest ="Best products";

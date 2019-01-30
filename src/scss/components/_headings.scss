@@ -16,7 +16,7 @@
     &--secondary{
         font-size: 3rem;
         color: $secondary-font-color;
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
 
         @include respond-to(mx-md){
             margin-bottom: 2rem;

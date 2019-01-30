@@ -64,6 +64,10 @@ img {
     image-rendering: -webkit-optimize-contrast;
 }
 
+a, a:hover, a:active, a:visited {
+	text-decoration: none;
+}
+
 
 /* Hide HTML5 Up and Down arrows. */
 input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
